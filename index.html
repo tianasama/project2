@@ -1,18 +1,28 @@
+<!--QUESTIONS FOR LEXI!
+1. When I'm adding in stylesheets and javascript, should I stack the plugin or bootstrap first?
+2. Is there any way to set the height of each column and automatically make words move to the next column?
+-->
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     
     <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png"> 
 	<title>A Brief History of Gucci</title>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	
+	
+	<!--STYLE SHEETS-->
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka|Old+Standard+TT|Playfair+Display:400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-
 </head>
+
+
+
 <body>
-	<ul id="menu">
+	<ul id="chapters">
 		<li data-menuanchor="page1" class="active"><a href="#page1">Title</a></li>
 		<li data-menuanchor="page2"><a href="#page2">Introduction</a></li>
 		<li data-menuanchor="page3"><a href="#page3">I</a></li>
@@ -31,7 +41,8 @@
     <!--BEGIN PAGEPILING CODE----------->
 	<div id="pagepiling">
 
-        <!--TITLE SCREEN---------------->
+        <!--TITLE SCREEN, SECTION 1---------------->
+
 	    <div class="section" id="section1">
 	    	<video autoplay loop muted id="myVideo">
 				<source src="guccifw17.mp4" type="video/mp4">
@@ -40,12 +51,11 @@
 				<img src="images/logo.png" alt="gucci logo" id="guccilogotitle">
 			</div>
 	    </div>
-        
-        
-        <!--INTRODUCTION (CURRENTLY YOUR "SCROLLING" EXAMPLE)---------------->
+
+        <!--INTRODUCTION, SECTION 2 (CURRENTLY YOUR "SCROLLING" EXAMPLE)---------------->
 	    <div class="section pp-scrollable" id="section2">
-	    	<div class="intro">
-	    		<h1><img src="images/logo.png" alt="gucci logo" id="guccilogointro"></h1>
+	    	<div class="intro storybook">
+	    		<img src="images/logo.png" alt="gucci logo" id="guccilogointro">
 				<p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum. Fusce pretium ultricies sapien, nec malesuada est eleifend a. Curabitur condimentum varius pharetra. Praesent sodales elit elit, sit amet volutpat orci mattis vel. Nunc in libero a metus fringilla bibendum a ac tortor. Curabitur at porttitor neque. Donec id tellus in lectus facilisis lobortis at nec tortor. Praesent et lectus at elit vulputate bibendum a at magna. Aliquam pretium dolor sagittis laoreet sollicitudin. Integer in molestie eros.</p><br>
                 
                 <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum. Fusce pretium ultricies sapien, nec malesuada est eleifend a. Curabitur condimentum varius pharetra. Praesent sodales elit elit, sit amet volutpat orci mattis vel. Nunc in libero a metus fringilla bibendum a ac tortor. Curabitur at porttitor neque. Donec id tellus in lectus facilisis lobortis at nec tortor. Praesent et lectus at elit vulputate bibendum a at magna. Aliquam pretium dolor sagittis laoreet sollicitudin. Integer in molestie eros.</p><br><br>
@@ -54,116 +64,145 @@
                 
         
         
-        <!--CHAPTER ONE: GUCCIO'S DREAM---------------->
-	    <div class="section pp-scrollable" id="section3">
-	    	<div class="intro">
-	    		<h1>I</h1> <!--float right-->
-				<p>Guccio Gucci watched from a distance as wealthy tourists, graceful and otherworldly, touted beautiful luxury suitcases to and fro. Although they passed within mere inches of him, they still somehow seemed as if they existed lightyears away.</p><br>
-                <p>An Italian immigrant working as a hotel attendant at the prestigious Savoy Hotel in London, young Guccio bore witness each and every day to the beauty that such garments and accessories could possess--and each and every day, his desire to create such beauty himself grew a little bit stronger. </p>
+        <!--CHAPTER ONE: GUCCIO'S DREAM, SECTION 3---------------->
+	    <div class="section" id="section3">
+	    	<div class="intro storybook">
+	    		<h1>I</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>Guccio Gucci watched from a distance as wealthy tourists, graceful and otherworldly, touted beautiful luxury suitcases to and fro. Although they passed within mere inches of him, they still somehow seemed as if they existed lightyears away.</p>
+				</div>
+				<div class="col-md-6">
+                <p>An Italian immigrant working as a hotel attendant at the prestigious Savoy Hotel in London, young Guccio bore witness each and every day to the beauty that such garments and accessories could possess--and each and every day, his desire to create such beauty himself grew a little bit stronger.</p>
+				</div>
+				</div>
 	    	</div>
 	    </div>
         
         
-        <!--CHAPTER TWO: GUCCI IS BORN---------------->
-	    <div class="section pp-scrollable" id="section4">
-	    	<div class="intro">
-	    		<h1>II</h1> <!--float left-->
-				<p>Inspired by the fineries he’d lusted after for so long, Guccio returned to his hometown of Florence, Italy, in 1902 to make his dream a reality. In 1921, his eponymous brand came to life; Gucci, a name now revered for its brilliance, sprung into humble beginnings.</p>
+        <!--CHAPTER TWO: GUCCI IS BORN, SECTION 4---------------->
+	    <div class="section" id="section4">
+	    	<div class="intro storybook">
+				
+	    		<h1>II</h1>
+				<h3>GUCCI IS BORN</h3>
+				<div class="row text">
+				<p>Inspired by the fineries he’d lusted after for so long, Guccio returned to his hometown of Florence, Italy, in 1902 to make his dream a reality.<br><br> In 1921, his eponymous brand came to life.<br><br> <b>Gucci</b>, a name now revered for its brilliance, sprung into humble beginnings.</p>
+				</div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER THREE: CRAFTSMANSHIP---------------->
-	    <div class="section pp-scrollable" id="section5">
-	    	<div class="intro">
-	    		<h1>III</h1> <!--float right-->
-				<p>Employing local Florentine artisans, reknowned for their craftsmanship, Guccio pieced together the brand’s image. As their fame grew, Guccio, along with his three sons, Aldo, Vasco, and Rodolfo, worked to expand their empire; new stores opened in Florence, as well as in Milan and Rome, throughout the early- to mid-20th century. City by city, year by year, people began to take notice of Gucci’s fine leather handbags, suitcases, and shoes.</p><br>
-                
-                <p>During this time, many of Gucci’s most iconic creations came to exist: their brown and tan, diamond-patterned luggage; their handbags with bamboo handles; their beautifully-crafted leather loafers; and the green and red bands by which millions around the world still identify the brand to this day.</p>
+	    <div class="section" id="section5">
+	    	<div class="intro storybook">
+	    		<h1>III</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>Employing local Florentine artisans, reknowned for their craftsmanship, Guccio pieced together the brand’s image. As their fame grew, Guccio, along with his three sons, Aldo, Vasco, and Rodolfo, worked to expand their empire; new stores opened in Florence, as well as in Milan and Rome, throughout the early- to mid-20th century. City by city, year by year, people began</p></div>
+                <div class="col-md-6">
+                <p> to take notice of Gucci’s fine leather handbags, suitcases, and shoes. During this time, many of Gucci’s most iconic creations came to exist: their brown and tan, diamond-patterned luggage; their handbags with bamboo handles; their beautifully-crafted leather loafers; and the green and red bands by which millions around the world still identify the brand to this day.</p></div>
+				</div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER FOUR: INTERNATIONAL ICONS---------------->
-	    <div class="section pp-scrollable" id="section6">
-	    	<div class="intro">
-	    		<h1>IV</h1> <!--float left-->
-				<p>Just after the conclusion of World War II, two of the Gucci sons, Aldo and Rodolfo, opened the family’s first store in New York City. As they networked with celebrities and socialites of the day, the American film stars of the 1950s also began vacationing more and more often in Florence, returning home with Gucci goods and establishing the brand as an international symbol of glamour and luxury.</p><br>
-                
-                <p>Just fifteen days after the opening of the New York store, the family laid dear Guccio Gucci to rest at age 72. His eldest son, Aldo, rose to the head of the company and worked to fill his late father’s footsteps.</p>
+	    <div class="section" id="section6">
+	    	<div class="intro storybook">
+	    		<h1>IV</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>Just after the conclusion of World War II, two of the Gucci sons, Aldo and Rodolfo, opened the family’s first store in New York City. As they networked with celebrities and socialites of the day, the American film stars of the 1950s also began vacationing more and more often in Florence, returning home with</p><br></div>
+                <div class="col-md-6">
+                <p>Gucci goods and establishing the brand as an international symbol of glamour and luxury. Just fifteen days after the opening of the New York store, the family laid dear Guccio Gucci to rest at age 72. His eldest son, Aldo, rose to the head of the company and worked to fill his late father’s footsteps.</p></div>
+				</div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER FIVE: ETERNALLY REMEMBERED---------------->
-	    <div class="section pp-scrollable" id="section7">
-	    	<div class="intro">
-	    		<h1>V</h1> <!--float right-->
-				<p>As the decades passed, so did Gucci prosper; the 50s, 60s and 70s saw the brand thrive. Stores opened in London, Paris, Tokyo, Hong Kong, and Beverly Hills; icons like First Lady Jacqueline Kennedy and Princess Grace of Monaco carry ; By 1985, the accessory that perhaps champions as the brand’s most iconic creation—the Gucci leather loafer—went up on display at the Metropolitan Museum of Art in New York, cementing the brand’s name as one to be eternally remembered.</p>
+	    <div class="section" id="section7">
+	    	<div class="intro storybook">
+	    		<h1>V</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>As the decades passed, so did Gucci prosper; the 50s, 60s and 70s saw the brand thrive. Stores opened in London, Paris, Tokyo, Hong Kong, and Beverly Hills; icons like First Lady Jacqueline Kennedy and Princess Grace of Monaco carry ;</div>
+				<div class="col-md-6">
+				<p>By 1985, the accessory that perhaps champions as the brand’s most iconic creation—the Gucci leather loafer—went up on display at the Metropolitan Museum of Art in New York, cementing the brand’s name as one to be eternally remembered.</p></div>
+				</div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER SIX: FAMILY FEUD---------------->
-	    <div class="section pp-scrollable" id="section8">
-	    	<div class="intro">
-	    		<h1>VI</h1>  <!--float left-->
-				<p>However, fame rarely comes without a price; and as Gucci’s international reputation continued to grow, as did its problems. It began with Maurizio Gucci, son of Rodolfo Gucci and heir to the throne, who took over the company from his Uncle Aldo in 1984—only to surrender the remainder of the family’s already-halved shares to merchant bank InvestiCorp in 1985. After over 60 years of work, the family’s involvement in the brand came to an end.</p><br>
-                
-                <p>Then, the unexpected. Standing in a doorway in Milan on one fateful day in March 1995, Maurizio Gucci met his untimely fate: gunned down by a hitman who his own wife hired to kill him.</p>
+	    <div class="section" id="section8">
+	    	<div class="intro storybook">
+	    		<h1>VI</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>However, fame rarely comes without a price; and as Gucci’s international reputation continued to grow, as did its problems. It began with Maurizio Gucci, son of Rodolfo Gucci and heir to the throne, who took over the company from his dear</p></div>
+                <div class="col-md-6">
+                <p> Uncle Aldo in 1984—only to surrender the remainder of the family’salready-halved shares to merchant bank InvestiCorp in 1985. After over 60 years of work, the family’s involvement in the brand came to an end.</div>
+				</div>
+				<div class="row">
+				<p>Then, the unexpected. Standing in a doorway in Milan on one fateful day in March 1995, Maurizio Gucci met his untimely fate: gunned down by a hitman who his own wife hired to kill him.</p></div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER SEVEN: TOM TO THE RESCUE---------------->
-	    <div class="section pp-scrollable" id="section9">
-	    	<div class="intro">
-	    		<h1>VII</h1> <!--float right-->
-				<p>The mid-90s left Gucci in a dangerous place. Anxious investors on one side and a disappointed marketplace on the other, the decades-old fashion house desperately needed a rebranding and a hero.</p><br>
-                
-                <p>Enter: Texas-born designer Tom Ford, appointed creative director in 1994. With a debut collection focused on tktktk, critics and fans praised his work for its innovation and tktk. Several seasons in a row saw hit after hit under Ford’s care; the heavens opened, the angels sung, and the movie stars and moguls flocked to the shelves. Gucci was back and better than ever.</p>
+	    <div class="section" id="section9">
+	    	<div class="intro storybook">
+	    		<h1>VII</h1>
+				<div class="row text">
+				<div class="col-md-6">
+				<p>The mid-90s left Gucci in a dangerous place. Anxious investors on one side and a disappointed marketplace on the other, the decades-old fashion house desperately needed a rebranding and a hero. Enter: Texas-born designer Tom Ford, appointed creative director in 1994.</p></div>
+                <div class="col-md-6">
+                <p> With a debut collection focused on tktktk, critics and fans praised his work for its innovation and tktk. Several seasons in a row saw hit after hit under Ford’s care; the heavens opened, the angels sung, and the movie stars and moguls flocked to the shelves. Gucci was back and better than ever.</p></div>
+				</div>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER EIGHT: DEFENSE AGAINST THE DARK ARTS---------------->
-	    <div class="section pp-scrollable" id="section10">
-	    	<div class="intro">
-	    		<h1>IIX</h1> <!--float left-->
-				<p>Don't forget to use afterRender callback for it!</p>
+	    <div class="section" id="section10">
+	    	<div class="intro storybook">
+	    		<h1>IIX</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER NINE: ENTER: ALESSANDRO---------------->
-	    <div class="section pp-scrollable" id="section11">
-	    	<div class="intro">
-	    		<h1>IX</h1> <!--float right-->
-				<p>Don't forget to use afterRender callback for it!</p>
+	    <div class="section" id="section11">
+	    	<div class="intro storybook">
+	    		<h1>IX</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
 	    	</div>
 	    </div>
         
         
         
         <!--CHAPTER TEN: TODAY---------------->
-	    <div class="section pp-scrollable" id="section12">
-	    	<div class="intro">
-	    		<h1>X</h1> <!--float left-->
-				<p>Don't forget to use afterRender callback for it!</p>
+	    <div class="section" id="section12">
+	    	<div class="intro storybook">
+	    		<h1>X</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
 	    	</div>
 	    </div>
         
         
         <!--QUIZ INTRO---------------->
 	    <div class="section" id="section13">
-	    	<div class="intro">
+	    	<div class="intro storybook">
 	    		<h1>Paying attention?</h1>
 				<p>The rest of the world has been.</p><br>
                 <p>Test your knowledge of one of the biggest names in fashion history with this quick quiz.</p>
@@ -173,7 +212,7 @@
         
         <!--QUIZ---------------------->
 	    <div class="section" id="section14">
-	    	<div class="intro">
+	    	<div class="intro storybook">
 	    		<h1>Quiz</h1>
 				<p>insert quiz here</p>
 	    	</div>
@@ -194,17 +233,16 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/pagePiling.js-master/jquery.pagepiling.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
 	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
     
 <!--INITIALIZING PLUGIN + VIDEO FUNCTIONS-------------->
 	<script type="text/javascript">
 		$(document).ready(function() {
 	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
+	    		chapters: '#chapters',
                 direction: 'horizontal',
                 verticalCentered: true,
-                sectionsColor: ['#000', '#000', '#2C3E50', '#51bec4','#000', '#000', '#2C3E50', '#51bec4','#000', '#000', '#2C3E50', '#51bec4','#2C3E50', '#51bec4'],
+                sectionsColor: ['#000', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7'],
 	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page13', 'page14'],
                 scrollingSpeed: 100,
                 easing: 'swing',
@@ -235,5 +273,7 @@
 	    });
     </script>
     <script src="js/scripts.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
 </body>
 </html>
