@@ -1,26 +1,29 @@
 <!--QUESTIONS FOR LEXI!
-1. When I'm adding in stylesheets and javascript, should I stack the plugin or bootstrap first?
-2. Is there any way to set the height of each column and automatically make words move to the next column?
+1. Is there any way to implement a class when using media queries?
+2. Quiz plugin not working...?
+3. How to center top navigation?
+
 -->
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png"> 
 	<title>A Brief History of Gucci</title>
 	
 	
-	<!--STYLE SHEETS-->
-	<link href="https://fonts.googleapis.com/css?family=Vidaloka|Old+Standard+TT|Playfair+Display:400,900" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css"/>
+<!--STYLE SHEETS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vidaloka|Old+Standard+TT|Playfair+Display:400,900">
+	<link rel="stylesheet" type="text/css" href="css/jquery.quiz-min.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 
 
+<!--START BODY------->
 <body>
 	<ul id="chapters">
 		<li data-menuanchor="page1" class="active"><a href="#page1">Title</a></li>
@@ -35,40 +38,46 @@
         <li data-menuanchor="page10"><a href="#page10">IIX</a></li>
         <li data-menuanchor="page11"><a href="#page11">IX</a></li>
         <li data-menuanchor="page12"><a href="#page12">X</a></li>
-        <li data-menuanchor="page14"><a href="#page13">QUIZ</a></li>
+        <li data-menuanchor="page13"><a href="#page13">QUIZ</a></li>
 	</ul>
 
     <!--BEGIN PAGEPILING CODE----------->
 	<div id="pagepiling">
 
         <!--TITLE SCREEN, SECTION 1---------------->
-
 	    <div class="section" id="section1">
 	    	<video autoplay loop muted id="myVideo">
 				<source src="guccifw17.mp4" type="video/mp4">
 			</video>
 			<div class="layer">
-				<img src="images/logo.png" alt="gucci logo" id="guccilogotitle">
+				<img src="pngs/guccititle.png" alt="A Brief History of Gucci" id="guccilogotitle">
 			</div>
 	    </div>
 
-        <!--INTRODUCTION, SECTION 2 (CURRENTLY YOUR "SCROLLING" EXAMPLE)---------------->
+        <!--INTRODUCTION, SECTION 2---------------->
 	    <div class="section pp-scrollable" id="section2">
+			<div class="illustration">
+				<img src="images/gucci4.jpg" alt="A Brief History of Gucci"/>
+			</div>
 	    	<div class="intro storybook">
-	    		<img src="images/logo.png" alt="gucci logo" id="guccilogointro">
-				<p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum. Fusce pretium ultricies sapien, nec malesuada est eleifend a. Curabitur condimentum varius pharetra. Praesent sodales elit elit, sit amet volutpat orci mattis vel. Nunc in libero a metus fringilla bibendum a ac tortor. Curabitur at porttitor neque. Donec id tellus in lectus facilisis lobortis at nec tortor. Praesent et lectus at elit vulputate bibendum a at magna. Aliquam pretium dolor sagittis laoreet sollicitudin. Integer in molestie eros.</p><br>
-                
-                <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum. Fusce pretium ultricies sapien, nec malesuada est eleifend a. Curabitur condimentum varius pharetra. Praesent sodales elit elit, sit amet volutpat orci mattis vel. Nunc in libero a metus fringilla bibendum a ac tortor. Curabitur at porttitor neque. Donec id tellus in lectus facilisis lobortis at nec tortor. Praesent et lectus at elit vulputate bibendum a at magna. Aliquam pretium dolor sagittis laoreet sollicitudin. Integer in molestie eros.</p><br><br>
+				<p><b>In the year 2030,</b> experts predict that the population of Earth will reach 8.6 billion people. Simple math tells us, then, that approximately 17.2 billion eyes will also come to exist. Seventeen-point-two billion eyes that can look; 17.2 billion that can watch; 17.2 billion that can read, analyze, and process. But of those 17.2 billion, none but a select few will truly <b>see</b>. Only a few will enter this world with the gift of vision.</p>
+				<p>But who are these mythic individuals, those with the gift of sight? What do they do? And where on Earth do they hide?</p>
+				<p>This is the story of one house—eclectic, enigmatic, and eternal—where those with the gift of sight have gathered over the years, sharing their visions with the world in a farrago of leather and bamboo; of reds and greens; of dreams and fantasies. <b>This is the story of the House of Gucci.</b></p>
+				<br><br>
 	    	</div>  
 	    </div>
                 
         
         
         <!--CHAPTER ONE: GUCCIO'S DREAM, SECTION 3---------------->
-	    <div class="section" id="section3">
+	    <div class="section  pp-scrollable" id="section3">
+			<div class="illustration">
+				<img src="images/guccio.jpg" alt= "Guccio Gucci"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>I</h1>
-				<div class="row text">
+				<h3>GUCCIO'S DREAM</h3>
+				<div class="row">
 				<div class="col-md-6">
 				<p>Guccio Gucci watched from a distance as wealthy tourists, graceful and otherworldly, touted beautiful luxury suitcases to and fro. Although they passed within mere inches of him, they still somehow seemed as if they existed lightyears away.</p>
 				</div>
@@ -81,12 +90,14 @@
         
         
         <!--CHAPTER TWO: GUCCI IS BORN, SECTION 4---------------->
-	    <div class="section" id="section4">
+	    <div class="section pp-scrollable" id="section4">
+			<div class="illustration">
+				<img src="images/florence.jpg" alt= "Guccio Gucci"/>
+			</div>
 	    	<div class="intro storybook">
-				
 	    		<h1>II</h1>
 				<h3>GUCCI IS BORN</h3>
-				<div class="row text">
+				<div class="row">
 				<p>Inspired by the fineries he’d lusted after for so long, Guccio returned to his hometown of Florence, Italy, in 1902 to make his dream a reality.<br><br> In 1921, his eponymous brand came to life.<br><br> <b>Gucci</b>, a name now revered for its brilliance, sprung into humble beginnings.</p>
 				</div>
 	    	</div>
@@ -95,10 +106,12 @@
         
         
         <!--CHAPTER THREE: CRAFTSMANSHIP---------------->
-	    <div class="section" id="section5">
+	    <div class="section pp-scrollable" id="section5">
+			
 	    	<div class="intro storybook">
 	    		<h1>III</h1>
-				<div class="row text">
+				<h3>BLOSSOMING</h3>
+				<div class="row">
 				<div class="col-md-6">
 				<p>Employing local Florentine artisans, reknowned for their craftsmanship, Guccio pieced together the brand’s image. As their fame grew, Guccio, along with his three sons, Aldo, Vasco, and Rodolfo, worked to expand their empire; new stores opened in Florence, as well as in Milan and Rome, throughout the early- to mid-20th century. City by city, year by year, people began</p></div>
                 <div class="col-md-6">
@@ -110,12 +123,16 @@
         
         
         <!--CHAPTER FOUR: INTERNATIONAL ICONS---------------->
-	    <div class="section" id="section6">
+	    <div class="section pp-scrollable" id="section6">
+			<div class="illustration">
+				<img src="images/VascoAldoRodolfo.jpg" alt= "Guccio Gucci"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>IV</h1>
-				<div class="row text">
+				<h3>INTERNATIONAL ICONS</h3>
+				<div class="row">
 				<div class="col-md-6">
-				<p>Just after the conclusion of World War II, two of the Gucci sons, Aldo and Rodolfo, opened the family’s first store in New York City. As they networked with celebrities and socialites of the day, the American film stars of the 1950s also began vacationing more and more often in Florence, returning home with</p><br></div>
+				<p>Just after the conclusion of World War II, two of the Gucci sons, Aldo and Rodolfo, opened the family’s first store in New York City. As they networked with celebrities and socialites of the day, the American film stars of the 1950s also began vacationing more and more often in Florence, returning home with Gucci goods and establishing the brand as an international symbol of glamour and luxury.</p><br></div>
                 <div class="col-md-6">
                 <p>Gucci goods and establishing the brand as an international symbol of glamour and luxury. Just fifteen days after the opening of the New York store, the family laid dear Guccio Gucci to rest at age 72. His eldest son, Aldo, rose to the head of the company and worked to fill his late father’s footsteps.</p></div>
 				</div>
@@ -125,10 +142,14 @@
         
         
         <!--CHAPTER FIVE: ETERNALLY REMEMBERED---------------->
-	    <div class="section" id="section7">
+	    <div class="section pp-scrollable" id="section7">
+			<div class="illustration">
+				<img src="images/jackieo.jpg" alt= "Jackie O"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>V</h1>
-				<div class="row text">
+				<h3>ETERNALLY REMEMBERED</h3>
+				<div class="row">
 				<div class="col-md-6">
 				<p>As the decades passed, so did Gucci prosper; the 50s, 60s and 70s saw the brand thrive. Stores opened in London, Paris, Tokyo, Hong Kong, and Beverly Hills; icons like First Lady Jacqueline Kennedy and Princess Grace of Monaco carry ;</div>
 				<div class="col-md-6">
@@ -140,10 +161,14 @@
         
         
         <!--CHAPTER SIX: FAMILY FEUD---------------->
-	    <div class="section" id="section8">
+	    <div class="section pp-scrollable" id="section8">
+			<div class="illustration">
+				<img src="images/mauriziogucci.jpg" alt= "Maurizio Gucci"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>VI</h1>
-				<div class="row text">
+				<h3>FAMILY FEUD</h3>
+				<div class="row">
 				<div class="col-md-6">
 				<p>However, fame rarely comes without a price; and as Gucci’s international reputation continued to grow, as did its problems. It began with Maurizio Gucci, son of Rodolfo Gucci and heir to the throne, who took over the company from his dear</p></div>
                 <div class="col-md-6">
@@ -157,10 +182,14 @@
         
         
         <!--CHAPTER SEVEN: TOM TO THE RESCUE---------------->
-	    <div class="section" id="section9">
+	    <div class="section pp-scrollable" id="section9">
+			<div class="illustration">
+				<img src="images/tomford.jpg" alt= "Tom Ford"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>VII</h1>
-				<div class="row text">
+				<h3>TOM TO THE RESCUE</h3>
+				<div class="row">
 				<div class="col-md-6">
 				<p>The mid-90s left Gucci in a dangerous place. Anxious investors on one side and a disappointed marketplace on the other, the decades-old fashion house desperately needed a rebranding and a hero. Enter: Texas-born designer Tom Ford, appointed creative director in 1994.</p></div>
                 <div class="col-md-6">
@@ -172,9 +201,13 @@
         
         
         <!--CHAPTER EIGHT: DEFENSE AGAINST THE DARK ARTS---------------->
-	    <div class="section" id="section10">
+	    <div class="section pp-scrollable" id="section10">
+			<div class="illustration">
+				<img src="images/fridagiannini.jpg" alt= "Frida Giannini"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>IIX</h1>
+				<h3>DEFENSE AGAINST THE DARK ARTS</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
 	    	</div>
 	    </div>
@@ -182,9 +215,13 @@
         
         
         <!--CHAPTER NINE: ENTER: ALESSANDRO---------------->
-	    <div class="section" id="section11">
+	    <div class="section pp-scrollable" id="section11">
+			<div class="illustration">
+				<img src="images/alessandro.jpg" alt= "Alessandro Michele"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>IX</h1>
+				<h3>ENTER: ALESSANDRO</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
 	    	</div>
 	    </div>
@@ -192,31 +229,41 @@
         
         
         <!--CHAPTER TEN: TODAY---------------->
-	    <div class="section" id="section12">
+	    <div class="section pp-scrollable" id="section12">
+			<div class="illustration">
+				<img src="images/loved.jpg" alt= "Gucci still"/>
+			</div>
 	    	<div class="intro storybook">
 	    		<h1>X</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra risus a aliquet euismod. Donec sagittis purus eget nibh semper tristique. Sed rutrum dui eget sem aliquet tristique. Nam rutrum feugiat lectus at mollis. Nullam id mollis nunc, ac pellentesque quam. Morbi in sem eu justo aliquet interdum.</p>
+				<h3>THE MUSIC PLAYS ON</h3>
+				<div class="row">
+				<div class="col-md-6">
+				<p>To this day, crowds still look on as the glorious ‘GG’ symbol graces fashion weeks and runways all over the world. Under Michele’s eye, its garments carry a magic and whimsy with which few other brands can compete.</p></div>
+				<div class="col-md-6">
+				<p>Were Guccio alive, his pride in the house he built would certainly remain. Even now, he watches from above as somewhere, another hotel attendant stands looking on, moved justly by the beauty of the Gucci bag he saw in the hands of a passerby.</p></div>
+				</div>
 	    	</div>
 	    </div>
         
         
-        <!--QUIZ INTRO---------------->
-	    <div class="section" id="section13">
-	    	<div class="intro storybook">
-	    		<h1>Paying attention?</h1>
-				<p>The rest of the world has been.</p><br>
-                <p>Test your knowledge of one of the biggest names in fashion history with this quick quiz.</p>
-	    	</div>
+        <!--QUIZ!---------------->
+	    	<div class="section" id="section13">
+			<div class="illustration">
+				<img src="pngs/guccibelt.png" alt= "Gucci belt"/>
+			</div>
+	    	<div id="quiz">
+			 <div id="quiz-header">
+				<h1>Paying attention?</h1><br>
+				<p>The rest of the world has been.<br>
+                Test your knowledge on one of the biggest<br>names in fashion history with this quick quiz.</p><br>
+			 </div>
+			<div id="quiz-start-screen">
+				<p><a href="#" id="quiz-start-btn" class="quiz-button"><b style="font-size: 20px;">Start</b></a></p>
+			</div>
+			</div>
 	    </div>
         
-        
-        <!--QUIZ---------------------->
-	    <div class="section" id="section14">
-	    	<div class="intro storybook">
-	    		<h1>Quiz</h1>
-				<p>insert quiz here</p>
-	    	</div>
-	    </div>
+
         
 	</div>
 
@@ -225,55 +272,20 @@
 
 
 
-
-
-
-
 <!--JAVASCRIPT & JQUERY-------------------------->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/pagePiling.js-master/jquery.pagepiling.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-    
-<!--INITIALIZING PLUGIN + VIDEO FUNCTIONS-------------->
-	<script type="text/javascript">
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-	    		chapters: '#chapters',
-                direction: 'horizontal',
-                verticalCentered: true,
-                sectionsColor: ['#000', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7', '#FAEBD7', '#FAEBD7','#FAEBD7', '#FAEBD7'],
-	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page13', 'page14'],
-                scrollingSpeed: 100,
-                easing: 'swing',
-                loopBottom: false,
-                loopTop: false,
-                css3: true,
-			    navigation: {
-                    'textColor': '#000',
-                    'bulletsColor': '#000',
-			    	'position': 'right',
-			   		'tooltips': ['Title', 'Introduction', 'Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Chapter 6', 'Chapter 7', 'Chapter 8', 'Chapter 9', 'Chapter 10','QUIZ']
-			   	},
-                normalScrollElements: null,
-                normalScrollElementTouchThreshold: 5,
-                touchSensitivity: 5,
-                keyboardScrolling: true,
-                sectionSelector: '.section',
-                animateAnchor: false,
-        
-                //events
-                onLeave: function(index, nextIndex, direction){},
-                afterLoad: function(anchorLink, index){},
-			   	afterRender: function(){
-					//playing the video
-					$('video').get(0).play();
-				}
-			});
-	    });
-    </script>
-    <script src="js/scripts.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<!--SLIDER-->
+
+
+<!--QUIZ-->
+<script type="text/javascript" src="js/jquery.quiz-min.js"></script>
+
+<!--PAGEPILING-->
+<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

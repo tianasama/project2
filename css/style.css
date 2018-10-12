@@ -1,10 +1,11 @@
 @CHARSET "ISO-8859-1";
 
-/*VIDEO*/
 .section{
 	text-align:center;
 		}
 
+
+/*VIDEO*/
 #myVideo{
 	position: absolute;
 	z-index: 4;
@@ -45,9 +46,8 @@
 
 /*IDS*/
 #guccilogotitle {
-	width: 450px;
-	height: 300px;
-	margin-bottom: 100px;
+min-height: 350px;
+alig
 }
 
 #guccilogointro {
@@ -59,12 +59,34 @@
 	text-align: center;
 }
 
+#guccigoodies {
+	text-align: center;
+}
+
+#quiz h1, h3 {
+	text-align: center;
+	font-family: Vidaloka, serif;
+	}
+
+#section13 img {
+	max-width: 15%;
+}
 
 
 
 /*CUSTOM CLASSES*/
+.illustration {
+	margin-top: 100px;
+	align-content: center;
+}
+
+.illustration img {
+	max-height: 300px;
+}
+
+
 .storybook {
-	margin-top: 520px;
+	margin-top: 10px;
 	margin-left: 280px;
 	margin-right: 280px;
 	margin-bottom: 90px;
@@ -88,7 +110,6 @@
 /* MAIN */
  body {
 	margin: 0px;
-	color: #8B4513;
  }
 
 
@@ -104,13 +125,11 @@ ol,ul {
 }
 
 
-h1,h2,h3,h4,h5,h6 {
-    color: #8B4513;
-	font-weight: normal;
+h1,h3 {
+				font-weight: normal;
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#8B4513;
 }
 
 h1{
@@ -118,7 +137,6 @@ h1{
 }
 
 p{
-	color: #8B4513;
 	font-family: 'Old Standard TT', serif;
 	font-size: large;
 }
@@ -126,6 +144,16 @@ p{
 .section{
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,7 +192,6 @@ p{
 	color: #fff;
 }
 
-
 #chapters li.active a:hover{
 	color: #000;
 }
@@ -185,5 +212,46 @@ p{
 * --------------------------------------- */
 #pp-nav.custom .pp-tooltip{
 	color: #AAA;
+}
+
+
+/*YELLOW SECTIONS*/
+#section3 p, h1, h3 {
+	color:#
+}
+
+
+/*RED SECTIONS*/
+
+
+
+/*PINK SECTIONS*/
+
+
+
+/*GREEN SECTIONS*/
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+				h3 {
+					font-size: 20px;
+				}
+				p {
+					font-size: small;
+				}
+				img {
+					max-width: 30%;
+				}
+				#guccilogotitle {
+					min-height: 100px;
+				}
+				}
 }
 
