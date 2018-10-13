@@ -141,6 +141,45 @@ margin-top: -100px;;
 }
 
 
+.clippingsquiz {
+	position: sticky;
+	float: left;
+	bottom: 0px;
+	left: 35px;
+	max-height: 40%;
+}
+
+
+.clippingsleft {
+	position: sticky;
+	float: left;
+	bottom: 0px;
+	left: 0px;
+	max-height: 40%;
+	z-index: -1;
+}
+
+.clippingsright {
+	position: sticky;
+	float: right;
+	bottom: 0px;
+	right: 0px;
+	max-height: 40%;
+	z-index: -1;
+}
+
+.clippings {
+	position: sticky;
+	float: none;
+	bottom: 0px;
+	display: flex;
+	align-content: center;
+	max-height: 40%;
+	opacity: 0.4;
+	z-index: -2;
+}
+
+
 /* MAIN */
  body {
 	margin: 0px;
@@ -255,6 +294,14 @@ p{
 			.illustration {
 				margin-top: 150px;
 			}
+			
+			.clippingsleft {
+				display: none;
+			}
+			
+			.clippingsright {
+				display: none;
+			}
 	
 }
 
@@ -282,13 +329,27 @@ p{
 				}
 				.storybook p {
 					text-align: left;
-				}			
+				}
+				.clippingsleft {
+				display: none;
+			}
+			
+			.clippingsright {
+				display: none;
+			}
 }
 
 
 @media only screen and (max-width: 500px) {
 				.illustration {
 					margin-top: 200px;
+			}
+			.clippingsleft {
+				display: none;
+			}
+			
+			.clippingsright {
+				display: none;
 			}
 	
 }
