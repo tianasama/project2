@@ -35,11 +35,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
 /*QUIZ*/
 
 $('#quiz').quiz({
@@ -104,6 +99,26 @@ $('#quiz').quiz({
     }
   ]
 });
- });
+
+
+/*SLICK SLIDER*/
+$('.single-item').slick({
+    dots: false,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true,
+    mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+
+});
+});
+
+
+
+
+
 
 

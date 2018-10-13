@@ -47,7 +47,7 @@
 /*IDS*/
 #guccilogotitle {
 min-height: 350px;
-alig
+margin-top: -100px;;
 }
 
 #guccilogointro {
@@ -67,6 +67,24 @@ alig
 	text-align: center;
 	font-family: Vidaloka, serif;
 	}
+	
+	#section2 p, h1, h3 {
+	color: white;
+}
+
+	#section5 img {
+	margin-top: 175px;
+	margin-bottom: 20px;
+	max-width:40%;
+}
+
+#section5 img:hover {
+		background:#fdb8a5; 
+}
+
+#section5 img:active {
+		background:#fdb8a5; 
+}
 
 #section13 img {
 	max-width: 15%;
@@ -104,6 +122,22 @@ alig
 .storybook p {
 	padding: 20px;
 	text-align: justify;
+}
+
+.yellowtext {
+	color: #8B4513;
+}
+
+.redtext {
+	color: #F5B822;
+}
+
+.pinktext {
+	color: #b44b54;
+}
+
+.greentext {
+	color: #cef4c8;
 }
 
 
@@ -148,18 +182,8 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
 /* MENU */
 #chapters{
-	justify-content: space-around;
 	position:fixed;
 	top:0;
 	left:0;
@@ -168,6 +192,7 @@ p{
 	width: 100%;
 	padding: 0;
 	margin:0;
+	margin-bottom: 10px;
 }
 
 #chapters li {
@@ -187,8 +212,8 @@ p{
 }
 
 #chapters li.active{
-	background:#8B4513;
-	background: rgba(139, 69, 19, 0.5);
+	background:#333;
+	background: rgba(51, 51, 51, 0.5);
 	color: #fff;
 }
 
@@ -208,35 +233,32 @@ p{
 }
 
 
-/* Overwriting fullPage.js tooltip color
-* --------------------------------------- */
+
+
+/*TOOLTIP COLOR*/
 #pp-nav.custom .pp-tooltip{
 	color: #AAA;
 }
 
-
-/*YELLOW SECTIONS*/
-#section3 p, h1, h3 {
-	color:#
-}
-
-
-/*RED SECTIONS*/
+/*SECTION COLOR EDITS - This was the section I had the most trouble with; for whatever reason, changing the colors for some sections would affect others. I tried targeting individual elements within sections, too, but that didn't work either, so I had to resort to using style in the HTML. I'm still working to figure out what's going on, but here's a note just in case.*/
 
 
 
-/*PINK SECTIONS*/
 
-
-
-/*GREEN SECTIONS*/
 
 
 
 
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+			.illustration {
+				margin-top: 150px;
+			}
+	
+}
+
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 30px;
     }
@@ -247,11 +269,29 @@ p{
 					font-size: small;
 				}
 				img {
-					max-width: 30%;
+					max-width: 60%;
+					margin-top: auto;
 				}
 				#guccilogotitle {
-					min-height: 100px;
+					min-height: 40%;
+					min-width: 60%;
 				}
+				.storybook {
+					margin-left: 50px;
+					margin-right: 50px;
 				}
+				.storybook p {
+					text-align: left;
+				}			
 }
+
+
+@media only screen and (max-width: 500px) {
+				.illustration {
+					margin-top: 200px;
+			}
+	
+}
+				
+				
 
